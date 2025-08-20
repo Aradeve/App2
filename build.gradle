@@ -1,0 +1,19 @@
+// build.gradle (Project: HelloWorld)
+// هذا الملف يحتوي على إعدادات البناء التي تنطبق على جميع الموديلات في المشروع.
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.2.0' // قد يختلف الإصدار
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22" // قد يختلف الإصدار
+    }
+}
+
+plugins {
+    id 'com.android.application' version '8.2.0' apply false
+    id 'org.jetbrains.kotlin.android' version '1.9.22' apply false
+}
+
